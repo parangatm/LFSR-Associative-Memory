@@ -1,7 +1,6 @@
 `timescale 1ns / 1ps
-// `include "mux2_1.v"
 
-module test_lfsr_only();
+module test_LFSR();
 	reg [7:0] Data_in;
 	reg RD_Ext, WR_Ext, Clock, Clock_LFSR;
 	reg [15:0] WR_Count;
@@ -63,6 +62,6 @@ module test_lfsr_only();
 			end
 	end
 	
-	Memory_Top UUT(Data_in, RD_Ext, WR_Ext, Clock, Clock_LFSR, WR_Count, Address_out, Compare_Found_Out);
+	top_module_lfsr UUT(Data_in, RD_Ext, WR_Ext, Clock, Clock_LFSR, WR_Count, Address_out, Compare_Found_Out);
 
 endmodule
