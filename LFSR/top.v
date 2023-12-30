@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module Memory_Top(  input[7:0] Data_in,
+module top(  input[7:0] Data_in,
                     input RD_Ext,WR_Ext,
                     input Clock, Clock_LFSR,
                     input [15:0] WR_Count,
